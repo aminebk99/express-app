@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Install Database No SQL
+RUN npm install mongoose
+
 # Copy the rest of the application code
 COPY . .
 
