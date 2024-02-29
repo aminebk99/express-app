@@ -10,7 +10,7 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Install Database No SQL
+# Install mongoose for MongoDB connectivity
 RUN npm install mongoose
 
 # Copy the rest of the application code
@@ -21,4 +21,3 @@ EXPOSE 3000
 
 # Command to run the application
 CMD ["node", "app.js"]
- 
